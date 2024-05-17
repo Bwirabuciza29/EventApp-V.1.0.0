@@ -30,6 +30,22 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutEvents.vue')
+    },
+    {
+      path: '/invite',
+      name: 'invite',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/GuestPage.vue')
+    },
+    {
+      path: '/verif',
+      name: 'verif',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/CodeVerification.vue')
     }
   ]
 })
